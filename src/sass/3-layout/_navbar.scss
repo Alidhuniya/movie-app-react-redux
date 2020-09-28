@@ -1,0 +1,42 @@
+.navbar {
+   padding: 0.7rem 0rem 0.7rem 0rem;
+    background-color: #24272b;
+}
+.nav {
+    display: flex;
+    margin-left: 12rem;
+    margin-right: 12rem;
+
+    @media all and (max-width: 800px) {
+        margin-left: 0.7rem;
+        margin-right: 0.7em;
+    }
+}
+
+.header {
+    display: flex;
+    width: 100%;
+
+   
+}
+
+.header__h1-ele {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+
+    @media all and (max-width: 440px) {
+        font-size: 1rem;
+        margin-top: 1.7rem;
+    }
+}
+
+.header__react-logo {
+    margin-left: 3.5rem;
+}
+
+.nav__imdb-logo {
+    
+}
+

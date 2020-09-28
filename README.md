@@ -1,4 +1,4 @@
-# mobileStore 
+# Search Movie App
 
 # project is going on
 

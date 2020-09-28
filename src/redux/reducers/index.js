@@ -1,9 +1,15 @@
 import { combineReducers } from 'redux';
-import productsReducer from './allProductsReducer';
+import { search } from './searchReducer';
+import { movies } from './moviesReducer';
+import { movie } from './movieReducer';
+import { loading } from './loadingReducer';
 
 const allReducers =  combineReducers(
     {
-    productLists: productsReducer,
+    search,
+    movies,
+    movie,
+    loading,
     }
 );
 

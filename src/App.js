@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from "react";
 import "./App.scss";
 import { Route,  Switch } from 'react-router-dom';
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
+import { Home } from './pages/home/Home';
+import { Movie } from './components/Movie';
 
 
 class App extends Component {
@@ -11,13 +12,18 @@ class App extends Component {
 		return (
 			<Fragment>
 			
-			 {/* <Navbar /> */}
+			 <Navbar />
 			
 			 <Switch>
 			
-            {/* <Route exact path='/' component={AllProducts}/>
-           
-            <Route path='/:product_id' component={SingleProduct} /> */}
+			 <Route exact path="/">
+			 <Home />
+			 </Route>
+
+            <Route exact path="/movie/:id">
+			<Movie />
+			</Route>
+
           </Switch>
 
 		  <Footer />

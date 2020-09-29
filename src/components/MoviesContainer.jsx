@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
+import "../sass/3-layout/_movieCard.scss";
 
 import MovieCard from "./MovieCard";
+
+
 
 export class MoviesContainer extends Component {
   render() {
@@ -15,7 +18,7 @@ export class MoviesContainer extends Component {
             <MovieCard key={index} movie={movie} />
           ))
         : null;
-    return <div className="row">{content}</div>;
+    return <div className = "row">{content}</div>;
   }
 }
 

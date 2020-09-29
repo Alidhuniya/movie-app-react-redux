@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import "../sass/3-layout/_movie.scss";
 
 import { fetchMovie, setLoading } from "../redux/actions/searchActions";
 

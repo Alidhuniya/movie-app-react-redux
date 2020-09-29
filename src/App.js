@@ -3,8 +3,9 @@ import "./App.scss";
 import { Route,  Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { Home } from './pages/home/Home';
-import { Movie } from './components/Movie';
+
+import Home from "./pages/home/Home";
+import Movie from "./components/Movie";
 
 
 class App extends Component {
@@ -15,14 +16,10 @@ class App extends Component {
 			 <Navbar />
 			
 			 <Switch>
-			
-			 <Route exact path="/">
-			 <Home />
-			 </Route>
 
-            <Route exact path="/movie/:id">
-			<Movie />
-			</Route>
+			 <Route exact path="/" component={Home} />
+            <Route exact path="/movie/:id" component={Movie} />
+			
 
           </Switch>
 

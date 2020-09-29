@@ -6,7 +6,7 @@ import SearchForm from "./../../components/SearchForm";
 import MoviesContainer from "./../../components/MoviesContainer";
 import Spinner from "./../../components/Spinner";
 
-export class Home extends Component {
+ export class Home extends Component {
   render() {
     const { loading } = this.props;
     return (
@@ -19,7 +19,7 @@ export class Home extends Component {
 }
 
 const mapStateToProps = state => ({
-  loading: state.movies.loading
+  loading: state.loading
 });
 
 export default connect(mapStateToProps)(Home);

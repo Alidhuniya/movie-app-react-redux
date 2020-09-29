@@ -3,8 +3,8 @@ import {
   } from './../actions/actionTypes';
   
   const initialState = {
-    // text: '',
-    // movies: [],
+    text: '',
+    movies: [],
     loading: false,
     movie: []
   };

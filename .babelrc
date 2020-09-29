@@ -15,7 +15,13 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime"  //this will solve regeneratorRuntime is not defined?
+    "@babel/plugin-transform-runtime", //this will solve regeneratorRuntime is not defined?
+    [
+            "@babel/plugin-proposal-class-properties",
+            {
+              "loose": true
+            }
+          ]
   ]
 }
 

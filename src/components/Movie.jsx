@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { fetchMovie, setLoading } from '../../actions/searchActions';
+import { fetchMovie, setLoading } from "../redux/actions/searchActions";
 
-import Spinner from "../components/Spinner";
+import Spinner from "./Spinner";
 
 export class Movie extends Component {
   componentDidMount() {

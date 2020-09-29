@@ -1,12 +1,9 @@
-import {
-    FETCH_MOVIES
-  } from './../actions/actionTypes';
-  
+import {FETCH_MOVIES} from "../actions/actionTypes";
   const initialState = {
-    // text: '',
-    movies: [],
-    loading: false,
-    // movie: []
+    text: "",
+  movies: [],
+  loading: false,
+  movie: []
   };
   
   export const movies = (state = initialState, action) => {

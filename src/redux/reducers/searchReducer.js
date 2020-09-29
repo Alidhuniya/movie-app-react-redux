@@ -1,15 +1,12 @@
 import {
-  SEARCH_MOVIE,
-  FETCH_MOVIES,
-  FETCH_MOVIE_ID,
-  LOADING
+  SEARCH_MOVIE
 } from './../actions/actionTypes';
 
 const initialState = {
   text: '',
-  // movies: [],
+  movies: [],
   loading: false,
-  // movie: []
+  movie: []
 };
 
 export const search = (state = initialState, action) => {

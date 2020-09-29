@@ -8,8 +8,8 @@ export const fetchMovie = (id) => {
         try {
         
        const endpoint = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`;
-       const data = await fetch(endpoint);
-        const response1 = await data.json();
+       const ftch = await fetch(endpoint);
+        const response1 = await ftch.json();
             const result1 = response1.data
             dispatch(fetchMovieSuccess(result1))
   

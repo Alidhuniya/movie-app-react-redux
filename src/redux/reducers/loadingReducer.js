@@ -4,7 +4,10 @@ import {
   
   const initialState = {
    
+    text: '',
+    movies: [],
     loading: false,
+    movie: []
     
   };
   

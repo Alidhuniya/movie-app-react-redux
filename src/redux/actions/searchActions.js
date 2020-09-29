@@ -1,5 +1,5 @@
 import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE_ID, LOADING } from "./actionTypes";
-const API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
+// const API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
 import axios from "axios";
 
 
@@ -12,7 +12,7 @@ export const searchMovie = text => dispatch => {
 
 export const fetchMovies = text => dispatch => {
   axios
-    .get(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${text}`)
+    .get(`https://www.omdbapi.com/?apikey=c951ff1&s=${text}`)
     .then(response =>
       dispatch({
         type: FETCH_MOVIES,
@@ -24,7 +24,7 @@ export const fetchMovies = text => dispatch => {
 
 export const fetchMovie = id => dispatch => {
   axios
-    .get(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
+    .get(`https://www.omdbapi.com/?apikey=c951ff1&i=${id}`)
     .then(response =>
       dispatch({
         type: FETCH_MOVIE_ID,

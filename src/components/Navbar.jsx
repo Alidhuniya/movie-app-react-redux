@@ -9,6 +9,13 @@ const  Navbar = () => {
       <nav className="nav">
 
         <header className = "header" >
+
+        
+        <div className = "header__react-logo">
+            <i style = {{color : "#00d8ff"}} className="fab fa-react fa-5x" id="react-logo" />
+            </div>
+
+            
        <div className="header__h1">
             <Link className="" to="/">
               <h1 className = "header__h1-ele">Search Movies </h1>  
@@ -16,9 +23,6 @@ const  Navbar = () => {
              
             </div> 
 
-            <div className = "header__react-logo">
-            <i style = {{color : "#00d8ff"}} className="fab fa-react fa-5x" id="react-logo" />
-            </div>
 
             </header>       
          

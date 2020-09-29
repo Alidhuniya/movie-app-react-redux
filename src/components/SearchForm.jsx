@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-// import { searchMovie } from './../redux/actions/searchMovie';
-// import { fetchMovies } from './../redux/actions/fetchMovies';
-// import { setLoading } from './../redux/actions/loading';
+import "./../sass/3-layout/_search.scss";
 
 import {searchMovie, fetchMovies, setLoading} from "./../redux/actions/searchActions";
 
@@ -23,21 +21,23 @@ import {searchMovie, fetchMovies, setLoading} from "./../redux/actions/searchAct
   render() {
     return (
       <div >
-        <div >
-          <h1 >
-            <i className="fa fa-search" /> Search for a movie ,TV series ..
+        <div className = "search" >
+          <h1 className = "search__h1" >
+            <i style = {{fontSize: "4rem"}} className="fa fa-search" /> <span className = "search__span">Search for a movies, TV series ...</span>
           </h1>
           <form id="searchForm" onSubmit={this.onSubmit}>
             <input
               type="text"
-              
+              className = "form-input"
               name="searchText"
               placeholder="Search Movies, TV Series ..."
               onChange={this.onChange}
             />
-            <button type="submit" >
+            <div className = "search-btn">
+            <button className = "submit-btn" type="submit" >
               Search
             </button>
+            </div>
           </form>
         </div>
       </div>

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const footer = {
     backgroundColor: "#24272b",
-    padding: "0.7rem 0rem 0.7rem 0rem",
-    position: "fixed",
-   left: "0",
-   bottom: "0",
-   width: "100%",
-   color: "white",
-   textAlign: "center"
+    padding: "0.7rem 0rem 0.7rem 0rem"
+  //   position: "fixed",
+  //  left: "0",
+  //  bottom: "",
+  //  width: "100%",
+  //  color: "white",
+  //  textAlign: "center"
 }
 
 const footerElement = {

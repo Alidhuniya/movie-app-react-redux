@@ -17,13 +17,16 @@ export class Movie extends Component {
 
     let movieInfo = (
       <div className="container">
-        <div className="row">
-          <div className="col-md-4 card card-body">
+
+        <div className="container__row">
+
+          <div className="container__poster">
             <img src={movie.Poster} className="thumbnail" alt="Poster" />
           </div>
-          <div className="col-md-8">
-            <h2 className="mb-4">{movie.Title}</h2>
-            <ul className="list-group">
+
+          <div className="container__detail">
+            <h2 className="container__title">{movie.Title}</h2>
+            <ul className="">
               <li className="list-group-item">
                 <strong>Genre:</strong> {movie.Genre}
               </li>
@@ -47,27 +50,34 @@ export class Movie extends Component {
               </li>
             </ul>
           </div>
+
+
         </div>
-        <div className="row">
-          <div className="card card-body bg-dark my-5 text-light">
-            <div className="col-md-12">
-              <h3>About </h3>
+
+
+        <div className="container__about">
+
+          <div className="">
+            <div className="">
+              <h3 className = "container__h3">Description </h3>
               {movie.Plot}
               <hr />
               <a
                 href={'https://www.imdb.com/title/' + movie.imdbID}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary"
+                className="container__movie-btn"
               >
                 View on IMDB
               </a>
-              <Link to="/" className="btn btn-default text-light">
+              <Link  to="/" className="container__searchLink">
                 Go Back To Search
               </Link>
             </div>
           </div>
+
         </div>
+
       </div>
     );
 

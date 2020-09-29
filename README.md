@@ -1,6 +1,5 @@
 # Search Movie App
 
-# project is going on
 
-## See here [live]()
+## See here [live](https://redux-movie-searchapp.netlify.app/#/)
 
